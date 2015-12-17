@@ -1,0 +1,23 @@
+I KNOW HOW TO CREATE A CRON JOB:
+
+0 21 * * * perl -le 'sleep rand 7200' && osascript [path/to/your/mom-texter/texter.applescript] [TARGET PHONE NUMBER EG: 17860128741] [path/to/your/messages.txt]
+
+
+TO CREATE A CRONJOB:
+
+* open Terminal
+
+* if you dont know the path/to/your/script or path/to/your/messages.txt, you can drag those files from Finder 
+into Terminal to get it. use those paths in the code below
+
+* in Terminal type in: env EDITOR=nano crontab -e
+
+* copy & paste or type this line out into the editor, replacing the paths with your own:
+
+0 21 * * * perl -le 'sleep rand 7200' && osascript path/to/your/mom-texter/texter.applescript targetphonenumber path/to/your/messages.txt
+
+* when you're ready, hit ctrl + x followed by y and then enter. this will exit, save, and confirm.
+
+* your crontab should have been installed and as long as your computer is connected to internet and on 
+it should run every night at 9pm
+
