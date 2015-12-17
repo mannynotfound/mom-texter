@@ -10,10 +10,9 @@ Script that pulls a random line of text from a `.txt` file and texts it to a bud
 
 Target user MUST be a 'buddy' of yours on iMessage. iMessage is awful tbh and I still don't know what a buddy is but I think if you've messaged them once they're definitely your buddy. 
 
-then simply run 
-`osascript texter.applescript [path/to/your/texter.applescript] [target phone #] [path/to/your/messages.txt]`
+then simply run `osascript texter.applescript [target phone #] [path/to/your/messages.txt]`
 
-eg: `osascript texter.applescript ~/mom-texter/texter.applescript 17864591200 ~/mom-texter/messages.txt`
+eg: `osascript texter.applescript 17864591200 ~/mom-texter/messages.txt`
 
 ## Automation
 
